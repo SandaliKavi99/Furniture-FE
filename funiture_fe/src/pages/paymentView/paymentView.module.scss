@@ -1,0 +1,51 @@
+.paymentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    margin-top: 50px;
+    width: 40%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid rgb(196, 192, 192);
+    border-radius: 10px;
+    background-color: rgb(248, 246, 246);
+}
+
+.headLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(99, 99, 189);
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.labelName {
+    color: rgb(95, 93, 93);
+}
+
+.payButton {
+    width: 400px !important;
+    height: 40px !important;
+    font-size: 20px !important;
+    color: #fff !important;
+    margin: 30px 20px 20px -30px !important;
+    background-color: rgb(64, 63, 63) !important;
+    padding: 5px 5px 5px 5px !important;
+    border-radius: 5px !important;
+
+}
+
+.payButtonContainer {
+    display: flex;
+    justify-content: center;
+}

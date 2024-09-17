@@ -10,12 +10,12 @@ export default function NavBar() {
         <>
             <TabNav.Root className={styles.navRoot}>
                 <div className={styles.navColumn1}>
-                    <TabNav.Link href="#" active>
+                    <TabNav.Link href="/" active>
                         Home
                     </TabNav.Link>
                     <TabNav.Link href="#">Collection</TabNav.Link>
-                    <TabNav.Link href="#">Cart</TabNav.Link>
-                    <TabNav.Link href="#">Contact</TabNav.Link>
+                    <TabNav.Link href="/cartHistory">Cart</TabNav.Link>
+                    <TabNav.Link href="/imageUpload">Contact</TabNav.Link>
                 </div>
                 <div className={styles.navColumn2}>
                     <TabNav.Link href="#" className={styles.logo}>
