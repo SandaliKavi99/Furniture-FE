@@ -4,8 +4,16 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { Avatar, IconButton, TabNav } from "@radix-ui/themes";
 
 import styles from '../common/navBar.module.scss'
+import { use } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function NavBar() {
+    const router = useRouter();
+
+    const directToLogin = () => {
+        router.push('login');
+    }
+
     return (
         <>
             <TabNav.Root className={styles.navRoot}>
@@ -33,7 +41,7 @@ export default function NavBar() {
                             <MagnifyingGlassIcon width="18" height="18" />
                         </IconButton>
                     </TabNav.Link>
-                    <TabNav.Link href="#">
+                    <TabNav.Link onClick={directToLogin}>
                         <Avatar
                             src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?&w=256&h=256&q=70&crop=focalpoint&fp-x=0.5&fp-y=0.3&fp-z=1&fit=crop"
                             fallback="A"
